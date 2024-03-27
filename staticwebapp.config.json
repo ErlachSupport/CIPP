@@ -24,19 +24,23 @@
     },
     {
       "route": "/api/ExecSAMSetup",
-      "allowedRoles": ["admin", "editor", "readonly", "authenticated", "anonymous"]
+      "allowedRoles": ["admin", "editor", "gdap_admin", "readonly", "authenticated", "anonymous"]
     },
     {
       "route": "/api/AddStandardsDeploy",
       "allowedRoles": ["admin"]
     },
     {
+      "route": "/api/ExecGDAP*",
+      "allowedRoles": ["admin", "gdap_admin"]
+    },
+    {
       "route": "/LogoutRedirect",
-      "allowedRoles": ["admin", "editor", "readonly", "authenticated", "anonymous"]
+      "allowedRoles": ["admin", "editor", "gdap_admin", "readonly", "authenticated", "anonymous"]
     },
     {
       "route": "/404",
-      "allowedRoles": ["admin", "editor", "readonly", "authenticated", "anonymous"]
+      "allowedRoles": ["admin", "editor", "gdap_admin", "readonly", "authenticated", "anonymous"]
     },
     {
       "route": "/api/RemoveStandard",
@@ -44,15 +48,15 @@
     },
     {
       "route": "/api/add*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": ["admin", "editor", "gdap_admin"]
     },
     {
       "route": "/api/edit*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": ["admin", "editor", "gdap_admin"]
     },
     {
       "route": "/api/ExecSendPush",
-      "allowedRoles": ["admin", "editor", "readonly"]
+      "allowedRoles": ["admin", "editor", "gdap_admin", "readonly"]
     },
     {
       "route": "/api/ExecExcludeTenant",
@@ -60,11 +64,11 @@
     },
     {
       "route": "/api/Exec*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": ["admin", "editor", "gdap_admin"]
     },
     {
       "route": "/api/Remove*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": ["admin", "editor", "gdap_admin"]
     },
     {
       "route": "/cipp/*",
@@ -76,15 +80,15 @@
     },
     {
       "route": "/",
-      "allowedRoles": ["admin", "editor", "readonly", "reader", "authenticated", "anonymous"]
+      "allowedRoles": ["admin", "editor", "gdap_admin", "readonly", "reader", "authenticated", "anonymous"]
     },
     {
       "route": "/api/Public*",
-      "allowedRoles": ["admin", "editor", "readonly", "reader", "authenticated", "anonymous"]
+      "allowedRoles": ["admin", "editor", "gdap_admin", "readonly", "reader", "authenticated", "anonymous"]
     },
     {
       "route": "*",
-      "allowedRoles": ["admin", "editor", "readonly", "reader"]
+      "allowedRoles": ["admin", "editor", "gdap_admin", "readonly", "reader"]
     }
   ],
   "navigationFallback": {
