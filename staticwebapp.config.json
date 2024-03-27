@@ -31,7 +31,7 @@
       "allowedRoles": ["admin"]
     },
     {
-      "route": "/api/ExecGDAP*",
+      "route": "/ExecGDAP*",
       "allowedRoles": ["admin", "gdap_admin"]
     },
     {
